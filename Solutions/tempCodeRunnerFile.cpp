@@ -1,2 +1,2 @@
-std::cin>>data;
-        array.push_back(data);
+
+            array.push_back(input);
