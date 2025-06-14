@@ -1,18 +1,20 @@
 #include <iostream>
 
 int main(){
-    int steps = 0, distance;
-    int gun = 5;
-    std::cin>>distance;
-    
-    while(distance != 0){
-        while(distance < gun && gun > 0){
-            gun--;
+    int input, output, steps = 0, div;
+    std::cin>>input;
+    int array[] = {1, 2, 3, 4, 5};
+
+    while(input != 0){
+        for(int i = 4; i >= 0; i--){
+            if(array[i] <= input){
+                while(input >= array[i]){
+                    div = input / array[i];
+                    steps = div + steps;
+                    input = input - array[i]*div;
+                }
+            }
         }
-        std::cout<<distance / gun<<std::endl;
-        steps = steps + distance / gun;
-        // std::cout<<steps<<std::endl;
-        distance = distance - steps * gun;
     }
-    std::cout<<steps<<std::endl;    
+    std::cout<<steps<<std::endl;
 }
