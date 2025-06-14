@@ -1,2 +1,1 @@
-
-            array.push_back(input);
+input / 10;
