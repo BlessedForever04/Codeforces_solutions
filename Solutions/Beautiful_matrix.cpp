@@ -30,3 +30,5 @@ int main(){
     }
     std::cout<<output<<std::endl;
 }
+
+//always has something to believe in, without there a mind in a game and any chores
